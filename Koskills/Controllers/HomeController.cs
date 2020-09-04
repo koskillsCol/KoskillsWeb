@@ -23,7 +23,7 @@ namespace Koskills.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult About us()
         {
             return View();
         }
