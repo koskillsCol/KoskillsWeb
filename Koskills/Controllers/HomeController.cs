@@ -23,7 +23,7 @@ namespace Koskills.Controllers
             return View();
         }
 
-        public IActionResult About us()
+        public IActionResult About_us()
         {
             return View();
         }
