@@ -17,7 +17,7 @@ namespace Koskills.Areas.Usuarios.Pages.Account
         [BindProperty]
         public InputModel1 Input { get; set; }
         public class InputModel1
-        {  
+        {
             [Required]
             [EmailAddress]
             [Display(Name = "Email")]
@@ -27,6 +27,15 @@ namespace Koskills.Areas.Usuarios.Pages.Account
             [Display(Name = "Password")]
             [StringLength(100, ErrorMessage = "El número de caracteres de {0} debe ser al menos de {2}.", MinimumLength = 6)]
             public string Password { get; set; }
+
+            [Required]
+            [DataType(DataType.Password)]
+            [Compare("Password", ErrorMessage = "The Password and confirmation password do not match.")]
+            public string ConfirmPassword { get; set; }
+        }
+        public IActionResult OnPost(){
+            var data = Input;
+            return Page();
         }
     }
 }
