@@ -73,6 +73,7 @@ namespace Koskills
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapAreaControllerRoute("Usuarios","Usuarios", "{controller=Usuarios}/{action=Usuarios}/{id?}");
                 endpoints.MapRazorPages();
             });
         }

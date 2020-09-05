@@ -18,6 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Usuarios\Data\" />
+    <Folder Include="Areas\Usuarios\Models\" />
     <Folder Include="wwwroot\Images\" />
   </ItemGroup>
 
