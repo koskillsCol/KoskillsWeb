@@ -9,16 +9,22 @@
             <div class="span12 text-center">
                 <form method="post">
                     <img src="~/Images/logo.png" class="mx-auto w-75" />
-                    <div class="form-group text-left">
+                    <div class="form-group">
                         <input asp-for="Input.Email" placeholder="Email" class="form-control" />
                         <span asp-validation-for="Input.Email" class="text-danger"></span>
                     </div>
-                    <div class="form-group text-left">
+                    <div class="form-group">
                         <input asp-for="Input.Password" placeholder="Password" class="form-control" />
                         <span asp-validation-for="Input.Password" class="text-danger"></span>
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn  btn-block text-light" style="background: #01c7b8;">Log in</button>
+                        <div class="form-group p-2">
+                            <a asp-area="">Did you forget your password</a>
+                            <div class="form-group">
+                                <a asp-area="" asp-controller="Usuarios" asp-action="Registrar">Register</a>
+                            </div>
+                        </div> 
                     </div>
                 </form>
             </div>

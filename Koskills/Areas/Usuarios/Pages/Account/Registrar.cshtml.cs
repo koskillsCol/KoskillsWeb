@@ -19,6 +19,35 @@ namespace Koskills.Areas.Usuarios.Pages.Account
         public class InputModel1
         {
             [Required]
+            [RegularExpression(@"^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$", ErrorMessage = "Please enter a valid name")]
+            [StringLength(100, ErrorMessage = "El número de caracteres de {0} debe ser al menos de {2}.", MinimumLength = 3)]
+            [Display(Name = "First Name")]
+            public string PrimerNombre { get; set; }
+
+            [RegularExpression(@"^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$", ErrorMessage = "Please enter a valid name")]
+            [StringLength(100, ErrorMessage = "El número de caracteres de {0} debe ser al menos de {2}.", MinimumLength = 3)]
+            [Display(Name = "Second Name")]
+            public string SegundoNombre { get; set; }
+
+            [Required]
+            [RegularExpression(@"^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$", ErrorMessage = "Please enter a valid name")]
+            [StringLength(100, ErrorMessage = "El número de caracteres de {0} debe ser al menos de {2}.", MinimumLength = 3)]
+            [Display(Name = "Surname")]
+            public string PrimerApellido { get; set; }
+
+            [Required]
+            [RegularExpression(@"^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$", ErrorMessage = "Please enter a valid name")]
+            [StringLength(100, ErrorMessage = "El número de caracteres de {0} debe ser al menos de {2}.", MinimumLength = 3)]
+            [Display(Name = "Second Surname")]
+            public string SegundoApellido { get; set; }
+
+            [Required]
+            [RegularExpression(@"^(\+\s?)?((?<!\+.*)\(\+?\d+([\s\-\.]?\d+)?\)|\d+)([\s\-\.]?(\(\d+([\s\-\.]?\d+)?\)|\d+))*(\s?(x|ext\.?)\s?\d+)?$", ErrorMessage = "Invalid Phone Number!")]
+            [StringLength(10, ErrorMessage = "The minimum phone number is 10 .", MinimumLength = 10)]
+            [Display(Name = "Phone Number")]
+            public string Telefono { get; set; }
+
+            [Required]
             [EmailAddress]
             [Display(Name = "Email")]
             public string Email { get; set; }
@@ -34,6 +63,10 @@ namespace Koskills.Areas.Usuarios.Pages.Account
             public string ConfirmPassword { get; set; }
         }
         public IActionResult OnPost(){
+
+            if (ModelState.IsValid) { 
+            
+            }
             var data = Input;
             return Page();
         }
