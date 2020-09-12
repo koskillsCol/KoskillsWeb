@@ -6,17 +6,14 @@ for details on configuring this project to bundle and minify static web assets. 
     font-weight: bold;
     background: #46257A;
 }
+
+
 /*Final de Personalizacion del Nav*/
 
 a.navbar-brand {
     white-space: normal;
     text-align: center;
     word-break: break-all;
-}
-
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
 }
 
 .btn-primary {
@@ -61,13 +58,16 @@ button.accept-policy {
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
-  min-height: 100%;
+   
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    
+    margin-bottom: 60px;
+    margin: 0;
 }
 .footer {
   position: absolute;
@@ -76,3 +76,11 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+
+
+
+
+
+
+        

@@ -35,7 +35,6 @@ namespace Koskills.Areas.Usuarios.Pages.Account
             [Display(Name = "Surname")]
             public string PrimerApellido { get; set; }
 
-            [Required]
             [RegularExpression(@"^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$", ErrorMessage = "Please enter a valid name")]
             [StringLength(100, ErrorMessage = "El número de caracteres de {0} debe ser al menos de {2}.", MinimumLength = 3)]
             [Display(Name = "Second Surname")]

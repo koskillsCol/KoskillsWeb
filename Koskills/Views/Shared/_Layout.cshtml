@@ -6,33 +6,49 @@
     <title>@ViewData["Title"] - Koskills</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/Header.css" />
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-1" id="bgnav">
-            <div class="container">
-                <a class="navbar-brand text-light" asp-area="" asp-controller="Home" asp-action="Index"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <partial name="_LoginPartial" />
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="Usuarios" asp-controller="Usuarios" asp-action="Usuarios">Usuarios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="About_us">About us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<body style="background: #3c3582;" >
+    <header class="header">
+        <div class="container logo-nav-container">
+            <img src="~/Images/KoskillsWilmar.png" class="mx-auto w-25">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#" tabindex="-1" aria-disabled="true">Match</a></li>
+                    <li><a href="#" tabindex="-1" aria-disabled="true">Events</a></li>
+                    <li><a href="#" tabindex="-1" aria-disabled="true">News</a></li>
+                    <li><a href="#" tabindex="-1" aria-disabled="true">Business</a></li>
+                    <li><a href="#" tabindex="-1" aria-disabled="true">Team</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Social networks</a>
+                        <div class="dropdown-menu">
+                            <a href="https://www.facebook.com/Koskillx">Faceboook</a>
+                            <a href="https://www.instagram.com/koskills/?hl=es-la">Instagram</a>
+                            <a href="https://web.whatsapp.com/">Whatsapp</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
+    <!--Prueba de navar
+    <div class="social">
+        <ul>
+            <li><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+            <li><a class="nav-link" asp-area="Usuarios" asp-controller="Usuarios" asp-action="Usuarios">Users</a></li>
+            <li><a class="nav-link" asp-area="" asp-controller="Home" asp-action="About_us">About us</a></li>
+            <li><partial name="_LoginPartial"/></li>
+        </ul>
+    </div>
+
+
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-1 navbar-dark" id="bgnav">
+        <div class="container">
+            <partial name="_LoginPartial" />
+        </div>
+    </nav>
+        -->
+   
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
