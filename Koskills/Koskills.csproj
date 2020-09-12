@@ -23,9 +23,4 @@
     <Folder Include="wwwroot\Images\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Include="wwwroot\Images\carrusel2.jpg" />
-    <None Include="wwwroot\Images\carrusel3.jpg" />
-  </ItemGroup>
-
 </Project>

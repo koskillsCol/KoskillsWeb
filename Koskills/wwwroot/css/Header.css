@@ -3,7 +3,7 @@
 }
 .pb-3 {
     
-    padding-top: 5rem;
+    padding-top: 6rem;
 }
 .header {
     position: fixed;
@@ -41,6 +41,7 @@
         background: #46257A;
         color: #FFFFFF;
     }
+
 .dropdown-menu a {
     color: #46257A;
 }
