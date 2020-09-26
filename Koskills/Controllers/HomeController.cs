@@ -28,6 +28,19 @@ namespace Koskills.Controllers
             return View();
         }
 
+        public IActionResult Business()
+        {
+            return View();
+        }
+        public IActionResult News()
+        {
+            return View();
+        }
+        public IActionResult Match()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
