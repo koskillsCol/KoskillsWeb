@@ -22,16 +22,6 @@
                         <li><a class="nav-item" asp-area="" asp-controller="Home" asp-action="News">News</a></li>
                         <li><a class="nav-item" asp-area="" asp-controller="Home" asp-action="Business">Business</a></li>
                         <li><a class="nav-item" asp-area="" asp-controller="Home" asp-action="About_us">Team</a></li>
-                        <!--
-                <li class="dropdown">
-                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
-                <div class="dropdown-menu">
-                <a href="https://www.facebook.com/Koskillx">Faceboook</a>
-                 <a href="https://www.instagram.com/koskills/?hl=es-la">Instagram</a>
-                 <a href="https://web.whatsapp.com/">Whatsapp</a>
-                 </div>
-                 </li>
-                       -->
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</a>
                             <div class="dropdown-menu text-center">
@@ -43,31 +33,13 @@
             </nav>
         </div>
     </header>
-    <!--Prueba de navar
-    <div class="social">
-        <ul>
-            <li><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-            <li><a class="nav-link" asp-area="Usuarios" asp-controller="Usuarios" asp-action="Usuarios">Users</a></li>
-            <li><a class="nav-link" asp-area="" asp-controller="Home" asp-action="About_us">About us</a></li>
-            <li><partial name="_LoginPartial"/></li>
-        </ul>
-    </div>
-
-
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-1 navbar-dark" id="bgnav">
-        <div class="container">
-            <partial name="_LoginPartial" />
-        </div>
-    </nav>
-        -->
-   
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer bg-light">
+    <footer class="border-top footer bg-light fixed-bottom">
         <div class="container">
             &copy; 2020 - Koskills - <a asp-area="" asp-controller="Home" asp-action="About_us" class="text-primary">About us</a>
         </div>
