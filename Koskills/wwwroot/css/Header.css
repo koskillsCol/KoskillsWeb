@@ -1,13 +1,12 @@
 ﻿.header {
-    background: #FFFFFF;
-    padding:1rem;
-
+    background: #46257A;
+    padding: 1rem;
 }
 .header a {
-    color: #46257A;
-    text-decoration: none;
-    font-weight: bold;
-}
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: bold;
+    }
 .logo-nav-container {
     display:flex;
     justify-content:space-between;
@@ -26,15 +25,15 @@
     padding: 0.5rem 1rem;
     border-radius: 5px;
 }
-.navigation ul li a:hover {
-    background: #46257A;
-    color: #FFFFFF;
-}
+    .navigation ul li a:hover {
+        background: #FFFFFF;
+        color: #46257A;
+    }
 
 .navigation .dropdown .dropdown-menu a {
     color: #46257A;
 }
-.navigation .dropdown .dropdown-menu a:hover {
+    .navigation .dropdown .dropdown-menu a:hover {
         background: #46257A;
         color: #FFFFFF;
     }
